@@ -1,14 +1,17 @@
+=begin
+    First class using Ruby created by me :D
+=end    
+end
 class HelloWorld
-    def initialize()
+    def initialize() #Constructor
     end
 
-    def say_hello()
-        puts "Hello World"
+    def say_hello() #method
+        puts "Hello World" #Prints in console
     end
 end
 
-helloObject = HelloWorld.new()
-helloObject.say_hello()
+helloObject = HelloWorld.new() #Class declaration
+helloObject.say_hello() #Call class method
 
-# User input
-gets()
+gets() # User input
