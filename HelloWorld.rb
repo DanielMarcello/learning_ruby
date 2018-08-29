@@ -1,13 +1,17 @@
 =begin
     First class using Ruby created by me :D
 =end    
-end
+
 class HelloWorld
     def initialize() #Constructor
     end
 
     def say_hello() #method
-        puts "Hello World" #Prints in console
+        name = "Daniel"
+        number1 = 1
+        number2 = 2.2
+        puts name 
+        puts number1+number2
     end
 end
 
