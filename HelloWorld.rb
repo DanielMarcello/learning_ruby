@@ -63,6 +63,28 @@ class HelloWorld
         unless age < 18 #Access to block when condition returns False
             puts "You are +18"
         end
+
+        howOld = 26
+        case howOld
+        when 0..11 then
+            puts "Child"
+        when 12..17 then
+            puts "Young"
+        when 18..40
+            puts "Adult"
+        when howOld >= 41
+            puts "Elder"
+        else
+            puts "Error"
+        end
+
+        object = "2+3=5"
+        answer = case object
+        when "2+3=5","4+1=5" then "Correct!"
+        when "2+3=fish", "4+1=666" then "Incorrect!"
+        else "NaN"
+        end
+        puts answer
     end
 end
 
