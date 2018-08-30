@@ -141,9 +141,9 @@ class HelloWorld
         end until wi4 > 5
         puts ""
 
-        puts "Give me your name"
-        nameGiven = gets
-        print "Hello, #{nameGiven}"
+        # puts "Give me your name"
+        # nameGiven = gets
+        # print "Hello, #{nameGiven}"
     end
 end
 
