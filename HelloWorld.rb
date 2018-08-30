@@ -115,6 +115,31 @@ class HelloWorld
             print i, " "
         }
         puts ""
+
+        wi = 0
+        while wi < 5
+            print wi, " "
+            wi = wi + 1
+        end
+        puts ""
+        wi2 = 5
+        begin
+            print wi2, " "
+            wi2 = wi2 + 1
+        end while wi2 < 5
+        puts ""
+        wi3 = 0
+        until wi3 > 5
+            print wi3, " "
+            wi3 = wi3 + 1
+        end
+        puts ""
+        wi4 = 0
+        begin
+            print wi4, " "
+            wi4 = wi4 + 1
+        end until wi4 > 5
+        puts ""
     end
 end
 
