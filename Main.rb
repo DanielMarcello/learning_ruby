@@ -5,11 +5,26 @@ objDog2 = Dog.new("Chamaco")
 objDog2.bark
 
 #Singleton methods
-singDog = Dog.new("Rabito")
-def singDog.talk
+singMethodDog = Dog.new("Rabito")
+def singMethodDog.talk
     return "Hello Hooman!"
 end
-puts singDog.talk
+puts singMethodDog.talk
+
+#Singleton class
+baseDog = Dog.new
+class << baseDog
+    def talk
+        return "Hello Hooman!"
+    end
+end
+puts baseDog.talk
+if baseDog.respond_to?(:talk) # baseDog => True, objDog = False
+    puts baseDog.talk
+else
+    puts "This dog cannot talk"
+end
+
 
 class Xclass
     def initialize()
