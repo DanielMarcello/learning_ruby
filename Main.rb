@@ -25,7 +25,13 @@ else
     puts "This dog cannot talk"
 end
 
+#Access methods
+accDog = Dog.new("Orejas")
+puts accDog.getName
+accDog.name = "Cuco"
+puts accDog.getName
 
+#Nested methods
 class Xclass
     def initialize()
     end
