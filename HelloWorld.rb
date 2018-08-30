@@ -98,7 +98,23 @@ class HelloWorld
             puts i
         end
 =end
-        
+
+        (1..10).each { |i| #1..10
+            print i, " "            
+        }
+        puts ""
+        1.upto(10) { |i| #1..10
+            print i, " "
+        }
+        puts ""
+        10.downto(1) { |i| #10..1
+            print i, " "
+        }
+        puts ""
+        10.times { |i| #Starts in 0
+            print i, " "
+        }
+        puts ""
     end
 end
 
