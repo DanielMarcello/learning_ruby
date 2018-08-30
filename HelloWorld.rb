@@ -189,6 +189,15 @@ class HelloWorld
         for k,v in courses
             puts k,v
         end
+
+        lamb = lambda { "Hola mundo" }
+        puts lamb.call
+        lamb2 = lambda { |number| number+1 }
+        puts lamb2.call(12)
+        lamb3 = lambda do |number|
+            return number**2
+        end
+        puts lamb3.call(9)
     end
 end
 
