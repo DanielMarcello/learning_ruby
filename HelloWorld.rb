@@ -203,3 +203,19 @@ end
 
 helloObject = HelloWorld.new() #Class declaration
 helloObject.say_hello() #Call class method
+
+#Modifies the array object
+class Array
+    def iterate
+        self.each_with_index do |n, i|
+            self[i] = yield(n)
+        end
+    end
+end
+modArray = [1,2,3]
+modArray.iterate do |n|
+    n**2
+end
+for i in modArray
+    puts i
+end
