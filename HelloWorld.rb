@@ -140,10 +140,12 @@ class HelloWorld
             wi4 = wi4 + 1
         end until wi4 > 5
         puts ""
+
+        puts "Give me your name"
+        nameGiven = gets
+        print "Hello, #{nameGiven}"
     end
 end
 
 helloObject = HelloWorld.new() #Class declaration
 helloObject.say_hello() #Call class method
-
-# gets() # User input
