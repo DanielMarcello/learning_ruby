@@ -205,17 +205,34 @@ helloObject = HelloWorld.new() #Class declaration
 helloObject.say_hello() #Call class method
 
 #Modifies the array object
+# class Array
+#     def iterate
+#         self.each_with_index do |n, i|
+#             self[i] = yield(n)
+#         end
+#     end
+# end
+# modArray = [1,2,3]
+# modArray.iterate do |n|
+#     n**2
+# end
+# for i in modArray
+#     puts i
+# end
+
+#Procedures
 class Array
-    def iterate
+    def iterate(blck)
         self.each_with_index do |n, i|
-            self[i] = yield(n)
+            self[i] = blck.call(n)
         end
     end
 end
 modArray = [1,2,3]
-modArray.iterate do |n|
+squareArray = Proc.new do |n|
     n**2
 end
+modArray.iterate(squareArray)
 for i in modArray
     puts i
 end
