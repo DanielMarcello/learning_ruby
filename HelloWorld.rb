@@ -170,6 +170,25 @@ class HelloWorld
         for i in deletedExample
             puts i
         end
+
+        courses = {
+            'ruby' => 21,
+            'webPage' => 15
+        }
+        puts courses['ruby']
+        courses['html5'] = 25
+        puts courses
+        hashKeys = courses.keys
+        for i in hashKeys
+            puts i
+        end
+        hashValues = courses.values
+        for i in hashValues
+            puts i
+        end
+        for k,v in courses
+            puts k,v
+        end
     end
 end
 
