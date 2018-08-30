@@ -144,6 +144,32 @@ class HelloWorld
         # puts "Give me your name"
         # nameGiven = gets
         # print "Hello, #{nameGiven}"
+
+        array = [1,2]
+        print [3,4][1], "\n"
+        array << "new value"
+        array.push("with push")
+        print array, "\n"
+
+        example = [1,2,3,4,5,6]
+        for i in example
+            print "This value is #{i}\n"
+        end
+        example.each do |i|
+            puts i
+        end
+        mappedExample = example.map { |i| i+1 }
+        for i in mappedExample
+            puts i
+        end
+        selectedExample = example.select { |i| i > 3}
+        for i in selectedExample
+            puts i
+        end
+        deletedExample = example.delete_if {|i| i % 2 == 0}
+        for i in deletedExample
+            puts i
+        end
     end
 end
 
