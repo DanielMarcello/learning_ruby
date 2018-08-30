@@ -49,6 +49,15 @@ class HelloWorld
         else
             puts "Good Afternoon! it's #{hour} o'clock"
         end
+
+        grade = 8
+        if grade == 0 or (grade > 0 and grade <= 5)
+            puts "Disapproved"
+        elsif grade > 5 and grade <= 10
+            puts "Approved"
+        else
+            puts "Error"
+        end
     end
 end
 
