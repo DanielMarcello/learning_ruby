@@ -42,6 +42,13 @@ class HelloWorld
         word1 = "Hello"
         word2 = "Hello"
         puts word1 <=> word2 #1 when left > right, -1 when left < right, 0 when left == right
+
+        hour = 10
+        if hour < 12
+            puts "Good Morning! it's #{hour} o'clock"
+        else
+            puts "Good Afternoon! it's #{hour} o'clock"
+        end
     end
 end
 
