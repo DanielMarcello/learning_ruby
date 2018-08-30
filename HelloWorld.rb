@@ -85,6 +85,20 @@ class HelloWorld
         else "NaN"
         end
         puts answer
+
+=begin
+        for i in (1..10) do
+            if i == 2
+                next #pass to next iteration
+            elsif i == 3
+                redo #return to same iteration
+            elsif i == 5
+                break #break loop
+            end
+            puts i
+        end
+=end
+        
     end
 end
 
