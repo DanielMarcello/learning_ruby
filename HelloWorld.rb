@@ -1,9 +1,13 @@
 =begin
     First class using Ruby created by me :D
-=end    
+=end
+
+$global_variable = "Hello global" #Global variable
 
 class HelloWorld
     def initialize() #Constructor
+        @global_variable = "Instanced variable" #Instanced variable"
+        $global_variable = "Modified hello global" #Global variable modified
     end
 
     def say_hello() #method
@@ -13,6 +17,9 @@ class HelloWorld
         number2 = 2.2
         puts name 
         puts number1+number2
+
+        puts $global_variable
+        puts @global_variable
     end
 end
 
