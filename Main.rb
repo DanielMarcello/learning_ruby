@@ -4,6 +4,13 @@ objDog.bark
 objDog2 = Dog.new("Chamaco")
 objDog2.bark
 
+#Singleton methods
+singDog = Dog.new("Rabito")
+def singDog.talk
+    return "Hello Hooman!"
+end
+puts singDog.talk
+
 class Xclass
     def initialize()
     end
